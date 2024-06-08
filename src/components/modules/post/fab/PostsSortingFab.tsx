@@ -93,7 +93,7 @@ export const PostsSortingFab = () => {
     >
       <main className="relative flex w-[300px] flex-col">
         <section>
-          <div className="ml-1">按...排序</div>
+          <div className="ml-1">排序方式</div>
           <Select<SortBy>
             className="mt-2"
             values={sortByValues}

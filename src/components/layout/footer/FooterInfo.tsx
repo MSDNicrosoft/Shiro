@@ -190,10 +190,6 @@ const FooterBottom = async () => {
           <a href="/feed" target="_blank" rel="noreferrer">
             RSS
           </a>
-          <Divider />
-          <a href="/sitemap.xml" target="_blank" rel="noreferrer">
-            站点地图
-          </a>
           <Divider className="inline" />
 
           <SubscribeTextButton>
@@ -201,7 +197,7 @@ const FooterBottom = async () => {
           </SubscribeTextButton>
         </span>
         <span className="mt-3 block md:mt-0 md:inline">
-          Stay hungry. Stay foolish.
+          听不到动听的赞誉就不必逞强。
         </span>
       </p>
       <div>
