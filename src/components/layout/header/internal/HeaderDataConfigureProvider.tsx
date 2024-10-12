@@ -24,18 +24,18 @@ export const HeaderDataConfigureProvider: Component = ({ children }) => {
   useEffect(() => {
     if (!pageMeta) return
     const nextMenuConfig = cloneDeep(baseHeaderMenuConfig)
-    if (pageMeta) {
-      const homeIndex = nextMenuConfig.findIndex((item) => item.type === 'Home')
-      if (homeIndex !== -1) {
-        nextMenuConfig[homeIndex].subMenu = []
-        for (const page of pageMeta) {
-          nextMenuConfig[homeIndex].subMenu!.push({
-            path: `/${page.slug}`,
-            title: page.title,
-          })
-        }
-      }
-    }
+    // if (pageMeta) {
+    //   const homeIndex = nextMenuConfig.findIndex((item) => item.type === 'Home')
+    //   if (homeIndex !== -1) {
+    //     nextMenuConfig[homeIndex].subMenu = []
+    //     for (const page of pageMeta) {
+    //       nextMenuConfig[homeIndex].subMenu!.push({
+    //         path: `/${page.slug}`,
+    //         title: page.title,
+    //       })
+    //     }
+    //   }
+    // }
 
     if (categories?.length) {
       const postIndex = nextMenuConfig.findIndex((item) => item.type === 'Post')

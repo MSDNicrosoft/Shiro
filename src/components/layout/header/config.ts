@@ -13,7 +13,6 @@ import {
   IonBook,
   MdiFlask,
   MdiLightbulbOn20,
-  RMixPlanet,
 } from '~/components/icons/menu-collection'
 
 export interface IHeaderMenu {
@@ -30,7 +29,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '/',
     type: 'Home',
     icon: h(FaSolidDotCircle),
-    subMenu: [],
   },
   {
     title: '文稿',
@@ -46,7 +44,11 @@ export const headerMenuConfig: IHeaderMenu[] = [
     icon: h(FaSolidFeatherAlt),
     exclude: ['/notes/topics'],
   },
-
+  {
+    title: '友链',
+    icon: h(FaSolidUserFriends),
+    path: '/friends',
+  },
   {
     title: '时光',
     icon: h(FaSolidHistory),
@@ -67,19 +69,7 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(FaSolidCircle),
         path: '/timeline?memory=1',
       },
-      {
-        title: '专栏',
-        path: '/notes/topics',
-        icon: h('i', {
-          className: 'i-mingcute-align-bottom-fill flex center',
-        }),
-      },
     ],
-  },
-  {
-    title: '友链',
-    icon: h(FaSolidUserFriends),
-    path: '/friends',
   },
 
   {
@@ -102,11 +92,10 @@ export const headerMenuConfig: IHeaderMenu[] = [
         path: '/says',
         icon: h(FaSolidComments),
       },
-      {
-        title: '跃迁',
-        icon: h(RMixPlanet),
-        path: 'https://travel.moe/go.html',
-      },
     ],
   },
+  {
+    title: '关于',
+    path: '/about',
+  }
 ]
