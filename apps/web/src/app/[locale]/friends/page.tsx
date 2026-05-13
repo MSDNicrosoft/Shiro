@@ -243,8 +243,6 @@ const ApplyLinkInfo: FC = () => {
             t('rule_unavailable'),
             t('rule_content'),
             t('rule_https'),
-            t('rule_domain'),
-            t('rule_personal'),
           ].join('\n\n')}
         </Markdown>
         <Markdown className="[&_p]:my-1!">

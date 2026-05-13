@@ -34,7 +34,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '/',
     type: 'Home',
     icon: h(FaSolidDotCircle),
-    subMenu: [],
   },
   {
     title: '文稿',
@@ -56,6 +55,11 @@ export const headerMenuConfig: IHeaderMenu[] = [
     exclude: ['/notes/series'],
   },
 
+  {
+    title: '友链',
+    icon: h(FaSolidUserFriends),
+    path: '/friends',
+  },
   {
     title: '时光',
     titleKey: 'nav_timeline',
@@ -80,14 +84,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
         icon: h(FaSolidCircle),
         path: '/timeline?memory=1',
       },
-      {
-        title: '专栏',
-        titleKey: 'nav_topics',
-        path: '/notes/series',
-        icon: h('i', {
-          className: 'i-mingcute-align-bottom-fill flex center',
-        }),
-      },
     ],
   },
 
@@ -105,12 +101,6 @@ export const headerMenuConfig: IHeaderMenu[] = [
     path: '#',
     subMenu: [
       {
-        title: '友链',
-        titleKey: 'nav_friends',
-        icon: h(FaSolidUserFriends),
-        path: '/friends',
-      },
-      {
         title: '项目',
         titleKey: 'nav_projects',
         icon: h(MdiFlask),
@@ -122,12 +112,11 @@ export const headerMenuConfig: IHeaderMenu[] = [
         path: '/says',
         icon: h(FaSolidComments),
       },
-      {
-        title: '跃迁',
-        titleKey: 'nav_travel',
-        icon: h(RMixPlanet),
-        path: 'https://travel.moe/go.html',
-      },
     ],
+  },
+  {
+    title: '友链',
+    icon: h(FaSolidUserFriends),
+    path: '/friends',
   },
 ]
